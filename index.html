@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Smart Task Manager</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" autocomplete="off"/>
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <div id="errorMsg" class="error">Please enter a task!</div>
+
+    <div class="task-list" id="taskList"></div>
+
+    <div id="emptyMessage">No tasks yet. Add your first task above! ☝️</div>
+
+    <div id="stats">Total tasks: <span id="taskCount">0</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
